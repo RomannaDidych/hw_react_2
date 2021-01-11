@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hw_react_02/static/css/main.da4f7f1f.chunk.css",
-    "main.js": "/hw_react_02/static/js/main.f46729d1.chunk.js",
-    "main.js.map": "/hw_react_02/static/js/main.f46729d1.chunk.js.map",
-    "runtime-main.js": "/hw_react_02/static/js/runtime-main.e2063315.js",
-    "runtime-main.js.map": "/hw_react_02/static/js/runtime-main.e2063315.js.map",
-    "static/js/2.010acedf.chunk.js": "/hw_react_02/static/js/2.010acedf.chunk.js",
-    "static/js/2.010acedf.chunk.js.map": "/hw_react_02/static/js/2.010acedf.chunk.js.map",
-    "static/js/3.acac895e.chunk.js": "/hw_react_02/static/js/3.acac895e.chunk.js",
-    "static/js/3.acac895e.chunk.js.map": "/hw_react_02/static/js/3.acac895e.chunk.js.map",
-    "index.html": "/hw_react_02/index.html",
-    "static/css/main.da4f7f1f.chunk.css.map": "/hw_react_02/static/css/main.da4f7f1f.chunk.css.map",
-    "static/js/2.010acedf.chunk.js.LICENSE.txt": "/hw_react_02/static/js/2.010acedf.chunk.js.LICENSE.txt",
-    "static/media/femenine.57af5a0e.png": "/hw_react_02/static/media/femenine.57af5a0e.png",
-    "static/media/mars.e3aa3781.png": "/hw_react_02/static/media/mars.e3aa3781.png"
+    "main.css": "/hw_react_2/static/css/main.da4f7f1f.chunk.css",
+    "main.js": "/hw_react_2/static/js/main.f46729d1.chunk.js",
+    "main.js.map": "/hw_react_2/static/js/main.f46729d1.chunk.js.map",
+    "runtime-main.js": "/hw_react_2/static/js/runtime-main.96365196.js",
+    "runtime-main.js.map": "/hw_react_2/static/js/runtime-main.96365196.js.map",
+    "static/js/2.010acedf.chunk.js": "/hw_react_2/static/js/2.010acedf.chunk.js",
+    "static/js/2.010acedf.chunk.js.map": "/hw_react_2/static/js/2.010acedf.chunk.js.map",
+    "static/js/3.acac895e.chunk.js": "/hw_react_2/static/js/3.acac895e.chunk.js",
+    "static/js/3.acac895e.chunk.js.map": "/hw_react_2/static/js/3.acac895e.chunk.js.map",
+    "index.html": "/hw_react_2/index.html",
+    "static/css/main.da4f7f1f.chunk.css.map": "/hw_react_2/static/css/main.da4f7f1f.chunk.css.map",
+    "static/js/2.010acedf.chunk.js.LICENSE.txt": "/hw_react_2/static/js/2.010acedf.chunk.js.LICENSE.txt",
+    "static/media/femenine.57af5a0e.png": "/hw_react_2/static/media/femenine.57af5a0e.png",
+    "static/media/mars.e3aa3781.png": "/hw_react_2/static/media/mars.e3aa3781.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2063315.js",
+    "static/js/runtime-main.96365196.js",
     "static/js/2.010acedf.chunk.js",
     "static/css/main.da4f7f1f.chunk.css",
     "static/js/main.f46729d1.chunk.js"
