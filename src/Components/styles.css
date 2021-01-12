@@ -48,3 +48,15 @@
 	font-weight: 300;
 	margin: 0;
 }
+.checkboxArea{
+	display: flex;
+	justify-content: space-between;
+}
+.checkboxArea p{
+	font-size: 14px;
+	color: #4d4d00;
+}
+/*.checkbox{
+	width: 15px;
+	height: 15px;
+}*/
