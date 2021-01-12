@@ -6,7 +6,7 @@ import unknown from './icons/question-mark.png';
 
 function Contact(props){
 	
-		let path = "";
+		let path = "";		
 		if(props.gender === 'male'){
 			path = male
 		} else {

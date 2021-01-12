@@ -37,7 +37,10 @@ class Contracts extends Component {
 	
     state = {
     	contacts: contacts,
-    	search: ''
+    	search: '',
+    	checkMale: true,
+    	checkFemale: true,
+    	checkUnknown: true
     }
 
     handleSearchChange = async (e) => {
@@ -46,28 +49,46 @@ class Contracts extends Component {
     }
 
     filterContacts =  () => {
-    	const currentSearch = this.state.search.toLowerCase();
-    	console.log(currentSearch);
+    	const currentSearch = this.state.search.toLowerCase();    	
     	let filteredContacts = contacts.filter(contact => 
     		contact.firstName.toLowerCase().includes(currentSearch) || 
     		contact.lastName.toLowerCase().includes(currentSearch) || 
-    		contact.phone.toLowerCase().includes(currentSearch));
-    	console.log(filteredContacts);
+    		contact.phone.toLowerCase().includes(currentSearch));    	
     	if(filteredContacts !==[]) {
     		 this.setState({contacts: filteredContacts})
     	} else {
     		 this.setState({contacts: contacts})
     	}
-    }	
+    }
+
+    setGenderFilter = (e) =>{
+    	const gender = e.target.name;
+    	const isChecked = e.target.checked
+    	if (gender === "male") this.setState({checkMale: isChecked});
+    	if (gender === "female") this.setState({checkFemale: isChecked});
+    	if (gender === "unknown") this.setState({checkUnknown: isChecked});    	
+    }
+
+    filterGender = async (event) => {
+    	await this.setGenderFilter(event);
+    	let filteredGender = contacts.filter(contact => (contact.gender === "male" && (this.state.checkMale)) ||
+            (contact.gender === "female" && this.state.checkFemale) || (contact.gender === undefined && this.state.checkUnknown))
+    	this.setState({contacts: filteredGender})
+    }   	
 
 
 	render(){
 		return (			
 			<div className="contracts-block">
-				<input className="input" type="text" value={this.state.search} onChange = {this.handleSearchChange} />				
+				<input className="input" type="text" value={this.state.search} onChange = {this.handleSearchChange} />
+				<div className= "checkboxArea">
+					<p><input className="checkbox" defaultChecked="true" type="checkbox" name= "male" value={this.state.checkMale} onChange = {this.filterGender} />male</p>
+					<p><input className="checkbox" defaultChecked="true" type="checkbox" name= "female" value={this.state.checkMale} onChange = {this.filterGender} />female</p>
+					<p><input className="checkbox" defaultChecked="true" type="checkbox" name= "unknown" value={this.state.checkMale} onChange = {this.filterGender} />unknown</p>
+				</div>				
 				{this.state.contacts.map((contact, i) => <Contact {...contact} key={i}/>)}
 			</div>
-			)
+		)
 	}
 }
 
