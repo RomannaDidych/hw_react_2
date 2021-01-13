@@ -55,12 +55,13 @@ class Contracts extends Component {
   };
 
   filterContacts = () => {
-    const currentSearch = this.state.search.toLowerCase();
+    const currentSearch = this.state.search.toLowerCase();    
     let filteredContacts = contacts.filter(
       (contact) =>
         contact.firstName.toLowerCase().includes(currentSearch) ||
         contact.lastName.toLowerCase().includes(currentSearch) ||
-        contact.phone.toLowerCase().includes(currentSearch)
+        contact.phone.toLowerCase().includes(currentSearch)||
+        (contact.firstName +' '+contact.lastName).toLowerCase().includes(currentSearch)
     );
     if (filteredContacts !== []) {
       this.setState({ contacts: filteredContacts });
@@ -78,6 +79,7 @@ class Contracts extends Component {
   };
 
   filterGender = async (event) => {
+    this.setState({search: ""});
     await this.setGenderFilter(event);
     let filteredGender = contacts.filter(
       (contact) =>
