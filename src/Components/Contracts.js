@@ -55,7 +55,7 @@ class Contracts extends Component {
   };
 
   filterContacts = () => {
-    const currentSearch = this.state.search.toLowerCase();    
+    const currentSearch = this.state.search.toLowerCase().trim();    
     let filteredContacts = contacts.filter(
       (contact) =>
         contact.firstName.toLowerCase().includes(currentSearch) ||
